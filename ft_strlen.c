@@ -14,12 +14,12 @@
 
 int  ft_strlen(const char *s)
 {
-    const char *p;
+	const char *p;
 
-    p = s;
-    while (*s)
-    {
-        ++s;
-    }
-    return (s - p);
+	p = s;
+	while (*s)
+	{
+		++s;
+	}
+	return (s - p);
 }
