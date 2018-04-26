@@ -6,13 +6,13 @@
 /*   By: ebouvier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/26 01:22:15 by ebouvier          #+#    #+#             */
-/*   Updated: 2018/03/28 02:14:17 by ebouvier         ###   ########.fr       */
+/*   Updated: 2018/04/04 17:21:28 by ebouvier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strcpy(char *dst, const char *src)
+char	*ft_strcpy(char *dst, const char *src)
 {
-    return (ft_memcpy(dst, src, ft_strlen(src)+1));
+	return (ft_memcpy(dst, src, ft_strlen(src) + 1));
 }

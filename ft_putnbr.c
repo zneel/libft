@@ -6,25 +6,25 @@
 /*   By: ebouvier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/23 22:47:46 by ebouvier          #+#    #+#             */
-/*   Updated: 2018/03/23 22:58:44 by ebouvier         ###   ########.fr       */
+/*   Updated: 2018/04/04 18:23:47 by ebouvier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
-#include <unistd.h>
 
-void ft_putnbr(int n)
+#include "libft.h"
+
+void	ft_putnbr(int n)
 {
-    if (n == -2147483648)
-    {
-        ft_putstr("-2147483648");
-        return ;
-    }
-    if (n < 0)
-    {
-        ft_putchar('-');
-        n = -n;
-    }
-    if (n > 9)
-        ft_putnbr(n / 10);
-    ft_putchar(n % 10 + '0');
+	if (n == -2147483648)
+	{
+		ft_putstr("-2147483648");
+		return ;
+	}
+	if (n < 0)
+	{
+		ft_putchar('-');
+		n = -n;
+	}
+	if (n > 9)
+		ft_putnbr(n / 10);
+	ft_putchar(n % 10 + '0');
 }

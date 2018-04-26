@@ -6,13 +6,13 @@
 /*   By: ebouvier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 00:42:51 by ebouvier          #+#    #+#             */
-/*   Updated: 2018/03/28 01:58:32 by ebouvier         ###   ########.fr       */
+/*   Updated: 2018/04/04 17:25:51 by ebouvier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-  return((c >= 'A' && c <= 'Z') ? c = c - 'A' + 'a' : c);
+	return ((c >= 'A' && c <= 'Z') ? c = c - 'A' + 'a' : c);
 }

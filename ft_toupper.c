@@ -6,13 +6,13 @@
 /*   By: ebouvier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/27 19:19:20 by ebouvier          #+#    #+#             */
-/*   Updated: 2018/03/27 19:25:13 by ebouvier         ###   ########.fr       */
+/*   Updated: 2018/04/04 17:26:08 by ebouvier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    return ((c >= 'a' && c <= 'z') ? c - 'a' + 'A' : c);
+	return ((c >= 'a' && c <= 'z') ? c - 'a' + 'A' : c);
 }

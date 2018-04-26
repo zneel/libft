@@ -6,13 +6,13 @@
 /*   By: ebouvier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/25 20:13:26 by ebouvier          #+#    #+#             */
-/*   Updated: 2018/03/25 23:31:55 by ebouvier         ###   ########.fr       */
+/*   Updated: 2018/04/10 15:52:03 by ebouvier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int  ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	const char *p;
 
