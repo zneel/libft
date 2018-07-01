@@ -6,7 +6,7 @@
 #    By: ebouvier <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/23 18:49:32 by ebouvier          #+#    #+#              #
-#    Updated: 2018/04/11 14:00:57 by ebouvier         ###   ########.fr        #
+#    Updated: 2018/07/01 16:10:05 by ebouvier         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -79,7 +79,9 @@ SRCS		=	ft_strlen.c			\
 				ft_sort_integer_table.c	\
 				ft_swap.c			\
 				ft_strrev.c			\
-				ft_pow.c
+				ft_pow.c			\
+				ft_strndup.c		\
+				ft_strjfree.c
 OBJS		= $(SRCS:.c=.o)
 
 all: $(NAME)
