@@ -6,7 +6,7 @@
 /*   By: ebouvier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/26 17:19:37 by ebouvier          #+#    #+#             */
-/*   Updated: 2018/07/01 16:07:33 by ebouvier         ###   ########.fr       */
+/*   Updated: 2018/07/01 16:31:17 by ebouvier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_strrev(char *s);
 char				*ft_strjfree(char *s1, const char *s2);
-char 				*ft_strndup(const char *s1, size_t n);
+char				*ft_strndup(const char *s1, size_t n);
 
 size_t				ft_nbrlen(int nb);
 size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
