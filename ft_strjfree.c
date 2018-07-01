@@ -6,7 +6,7 @@
 /*   By: ebouvier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/01 16:06:04 by ebouvier          #+#    #+#             */
-/*   Updated: 2018/07/01 16:06:31 by ebouvier         ###   ########.fr       */
+/*   Updated: 2018/07/01 16:13:37 by ebouvier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ char	*ft_strjfree(char *s1, const char *s2)
 
 	if (!s1 || !s2)
 		return (NULL);
-	len[0] = strlen(s1);
-	len[1] = strlen(s2);
+	len[0] = ft_strlen(s1);
+	len[1] = ft_strlen(s2);
 	str = ft_strnew(len[0] + len[1]);
 	if (str == NULL)
 		return (NULL);
