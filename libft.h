@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebouvier <ebouvier@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouvier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/26 17:19:37 by ebouvier          #+#    #+#             */
-/*   Updated: 2018/04/15 16:38:00 by ebouvier         ###   ########.fr       */
+/*   Updated: 2018/04/11 13:56:18 by ebouvier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdint.h>
 
 typedef struct		s_list
 {
@@ -41,7 +40,6 @@ int					ft_strnequ(char const *s1, char const *s2, size_t n);
 int					ft_isws(char c);
 int					ft_abs(int value);
 int					ft_pow(int nb, int pow);
-int     			ft_sqrt(int nb);
 
 void				ft_putstr(char const *s);
 void				ft_putchar(char c);

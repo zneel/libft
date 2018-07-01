@@ -1,14 +1,14 @@
-# **************************************************************************** #
+#******************************************************************************#
 #                                                                              #
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ebouvier <ebouvier@student.42.fr>          +#+  +:+       +#+         #
+#    By: ebouvier <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/23 18:49:32 by ebouvier          #+#    #+#              #
-#    Updated: 2018/04/15 16:37:26 by ebouvier         ###   ########.fr        #
+#    Updated: 2018/04/11 14:00:57 by ebouvier         ###   ########.fr        #
 #                                                                              #
-# **************************************************************************** #
+#******************************************************************************#
 
 NAME		= libft.a
 CC			= gcc
@@ -79,30 +79,19 @@ SRCS		=	ft_strlen.c			\
 				ft_sort_integer_table.c	\
 				ft_swap.c			\
 				ft_strrev.c			\
-				ft_pow.c			\
-				ft_sqrt.c
+				ft_pow.c
 OBJS		= $(SRCS:.c=.o)
-
-C_NO		=	"\033[00m"
-C_OK		=	"\033[35m"
-C_GOOD		=	"\033[32m"
-C_ERROR		=	"\033[31m"
-C_WARN		=	"\033[33m"
-SUCCESS		=	$(C_GOOD)SUCCESS$(C_NO)
-OK			=	$(C_OK)OK$(C_NO)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@ar rcs $@ $^
-	@echo "Compiling & indexing" [ $(NAME) ] $(SUCCESS)
+	ar rcs $(NAME) $(OBJS)
 
 clean:
-	@rm -f $(OBJS)
-	@echo "Cleaning" [ $(NAME) ] "..." $(OK)
+	rm -f $(OBJS)
 
 fclean: clean
-	@rm -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
 
